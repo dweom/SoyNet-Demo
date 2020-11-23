@@ -18,7 +18,9 @@ NVIDIA와 non-NVIDIA 기반을 각각 CUDA, OpenCL 등의 기술기반으로 지
  - 제공형태는 library 파일 
    Windows는 dll, Linux는 so 파일 형태 (개발용 header와 lib는 별도)
  - 폴더 구성 
- '''
+   ![](images/folder_structure.png)  
+
+  ```
    ├─data         : 테스트 용 영상 파일 포함
    ├─mgmt         : SoyNet 실행환경
    │  ├─configs   : 모델정의 파일 (*.cfg)와 임시 라이선스키 포함 
@@ -26,7 +28,7 @@ NVIDIA와 non-NVIDIA 기반을 각각 CUDA, OpenCL 등의 기술기반으로 지
    │  ├─logs      : SoyNet log 파일 폴더
    │  └─weights   : 테스트용 모델의 weight 파일포함 (변환 script을 이용하여 SoyNet용으로 변환된 것임)
    └─run          : 실행 파일을 포함한 폴더 
- '''
+ ```
 
 다음 글은 NVIDIA GPU 환경 하에서 
 SoyNet을 이용하여 객체감지 모델 중 하나인 YOLOv4 모델을 이용한 
